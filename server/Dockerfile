@@ -24,3 +24,5 @@ RUN python3 -c "import gi; gi.require_version('Gst', '1.0'); \
     gi.require_version('GstVideo', '1.0'); \
     gi.require_version('GstBase', '1.0')"
 
+# Check whether GStreamer was successfully installed
+RUN gst-inspect-1.0 webrtcsink
